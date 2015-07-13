@@ -12,6 +12,9 @@ RUN echo "deb http://tinyos.stanford.edu/tinyos/dists/ubuntu natty main" >> /etc
 RUN apt-get update && apt-get install -y --force-yes \
   subversion \
   wget \
+  make \
+  g++ \
+  python-dev \
   tinyos-2.1.2
 
 # Download and decompress TinyOS sources
